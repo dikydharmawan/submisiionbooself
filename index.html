@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BookSelf</h1>
+        <button id="themeToggle">Mode Gelap</button>
+    </header>
+
+    <main>
+        <section id="bookEntry">
+            <h2>Tambah Buku Baru</h2>
+            <form id="bookEntryForm">
+                <input type="text" id="bookTitle" placeholder="Judul Buku" required>
+                <input type="text" id="bookAuthor" placeholder="Penulis Buku" required>
+                <input type="number" id="publicationYear" placeholder="Tahun Terbit" required>
+                <label>
+                    <input type="checkbox" id="hasBeenRead">
+                    Sudah Dibaca
+                </label>
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+        <section id="bookSearch">
+            <h2>Cari Buku</h2>
+            <form id="bookSearchForm">
+                <input type="text" id="searchQuery" placeholder="Cari Buku">
+                <button type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section id="bookShelves">
+            <div id="Belum Dibaca" class="bookshelf">
+                <h2>Belum Selesai Dibaca</h2>
+            </div>
+
+            <div id="Sudah Dibaca" class="bookshelf">
+                <h2>Sudah Selesai Dibaca</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dikydharmawan120704</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
